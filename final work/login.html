@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register | Practice</title>
+    <script src="./register.js"></script>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+  <div class="container">
+    
+    <form name="loginForm" method="read" action="./home.html">
+    
+       <div class="row">
+          <div class="col-25">
+            <label for="userEmail">Email</label>
+          </div>
+          <div class="col-75">
+            <input type="email" id="userEmail" name="userEmail" placeholder="Email" />
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-25">
+            <label for="userPassword">Password</label>
+           </div>
+           <div class="col-75">
+             <input type="password" id="userPassword" name="userPassword" placeholder="Password" />
+           </div>
+        </div>
+      
+      <div class="row">
+        <button type="submit" class="submitbtn" onclick="return LoginForm ()">Sign in</button>
+        <p a> Already have an account?    <a href="register.html">  Login-here</a></p>
+    </div>
+    </form>
+  </div>
+  <script src="register.js"> </script>
+ 
+</body>
+</html>
