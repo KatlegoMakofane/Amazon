@@ -1,4 +1,4 @@
-const validateRegisterForm = () => {
+function RegisterForm  ()  {
     let nameData = document.forms['loginForm']['userName'].value;
       if(nameData == "") {
         alert('Please input a name');
@@ -10,6 +10,11 @@ const validateRegisterForm = () => {
         return false;
        };
     let emailData = document.forms["loginForm"]['userEmail'].value;
+      if(emailData == "") {
+        alert('Please input an email')
+        return false;
+       };
+       let contactData= document.forms["loginForm"]['contactnumber'].value;
       if(emailData == "") {
         alert('Please input an email')
         return false;
@@ -30,8 +35,16 @@ const validateRegisterForm = () => {
         return false;
       };
 
-      localStorage.setItem('emailData', emailData .value);
-      localStorage.setItem('passwordData', passwordData.value);
+      sessionStorage.setItem('name', nameData.value);
+    sessionStorage.setItem('surname',lastnameData.value);
+    sessionStorage.setItem('mail',emailData.value);
+
+    sessionStorage.setItem('phonenumber',contactData.value);
+    sessionStorage.setItem('imagess', ImageData.value);
+    sessionStorage.setItem('Password', passwordData.value);
+    sessionStorage.setItem('confirmPassword', confirmPasswordData.value);
+  
+     
       ////////redirect user to login form
       alert('Your account has been created , Redirecting you to Login Website');
       // Redirecting to other page or webste code.
@@ -66,8 +79,19 @@ const LoginForm = () => {
         alert('Error login');
         
     }
-   
 
+    
+  //   function Init() {
+              
+  //     let loginState = false;
+  //     if( loginState  == false ){
+  //         window.location.href="./register.html";
+  //     }else{
+  //         window.location.href="./home.html";
+  //     }
+     
+  // }
+  // Init();   
 
-   
+    
   };
