@@ -1,4 +1,73 @@
-// const validateRegisterForm = () => {
+function signup(){
+    var name = document.getElementById('userName');
+    var surname = document.getElementById('lastName');
+    var mail = document.getElementById('userEmail');
+    var phoneNumber = document.getElementById('contactNumber');
+   
+    var images = document.getElementById('file');
+    var password =document.getElementById('userPassword');
+    var confirmpassword=document.getElementById('confirmPassword');
+        sessionStorage.setItem('userName', name.value);
+        sessionStorage.setItem('lastName',surname.value);
+        sessionStorage.setItem('userEmail',mail.value);
+        sessionStorage.setItem('contactNumber',phoneNumber.value);
+        sessionStorage.setItem('file', images.value);
+        sessionStorage.setItem('password', password.value);
+        sessionStorage.setItem('confirmPassword', confirmpassword.value);
+    
+      if(name.value.length== "" &&name.value.length<=6){
+            alert('Please fill in your Name');
+            return true;
+           
+        }
+        if(surname.value==""){
+            alert('Please fill in Last Name');
+            return false;
+        }
+         if(mail.value==""){
+            alert('Please fill in Last Name');
+            return false;
+        }if( phoneNumber.value==""){
+            alert('Please fill in Contact number');
+            return false;
+        } if(images.value==""){
+            alert('Please pick an image');
+            return false;
+        } if(password.value==""){
+            alert('Please fill in your password');
+            
+        }if(confirmpassword.value==""){
+            alert('Please enter a matching password');
+            
+        }
+    
+     
+        alert('Your account has been created, Redirecting you to Login Page');
+        window.open("index.html");
+    }
+    
+    function signin(){
+        var logmail=sessionStorage.getItem('mail');
+        var pw=sessionStorage.getItem('password');
+        var maibox=document.getElementById('userEmail').value;
+        var passbox=document.getElementById('userPassword').value;
+        var location = '';
+        if(maibox == logmail &&passbox==pw ){
+            alert("Your Email & Password correct") ;
+    this.location.href("home.html");
+        }
+        else if(maibox !=passbox &&passbox != pw ){
+          alert("Wrong Email or Password");
+        }
+        else if(maibox==''&passbox==''){
+            alert("Your Email & Password empty");
+        }
+        else{
+            alert("Welcome " +sessionStorage.getItem('userName'));
+    window.open("home.html");}
+};
+
+    // const validateRegisterForm = () => {
 //     let nameData = document.forms['loginForm']['userName'].value;
 //       if(nameData == "") {
 //         alert('Please input a name');
@@ -95,48 +164,3 @@
 
     
 //   };
-  function signup(){
-    var name = document.getElementById('name');
-    var surname = document.getElementById('surname');
-    var mail = document.getElementById('email');
-    var phoneNumber = document.getElementById('phoneNumber');
-    var password = document.getElementById('pwd');
-    var images = document.getElementById('image');
-    var password =document.getElementById('');
-    var confirmpassword=document.getElementById('');
-        sessionStorage.setItem('name', name.value);
-        sessionStorage.setItem('surname',surname.value);
-        sessionStorage.setItem('mail',mail.value);
-        sessionStorage.setItem('phonenumber',phoneNumber.value);
-        sessionStorage.setItem('imagess', images.value);
-        sessionStorage.setItem('Password', password.value);
-        sessionStorage.setItem('imagess', confirmpassword.value);
-      
-        
-     
-        alert('Your account has been created');
-        window.open("index.html");
-    }
-    
-    function signin(){
-        var logmail=sessionStorage.getItem('mail');
-        var lopw=sessionStorage.getItem('Password');
-        var maibox=document.getElementById('email').value;
-        var passbox=document.getElementById('pwd').value;
-        var location = '';
-        if(maibox != logmail ){
-            alert("Wrong Email") ;
-    this.location.href = location;
-        }
-        else if(passbox != lopw){
-          alert("Wrong Password");
-        }else{
-            alert("Welcome " +sessionStorage.getItem('name'));
-    window.open("home.html");
-        }
-    }
-    
-    
-    
-    
-    

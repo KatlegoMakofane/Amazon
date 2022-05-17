@@ -1066,7 +1066,7 @@ header .navContent ul li{
   height: 400px;
   background-color: #FAF8F4;
    margin-top: 100px;
-  margin-left: -30px;
+ margin-left: 180px;
 
     }
     .scrollbar.container{
@@ -1082,9 +1082,9 @@ header .navContent ul li{
   }
     .scrollbar .container h1{
       margin-top: -60px;
-      margin-left: 350px;
+      margin-left: 70px;
       left: 7px;
-      font-size: 20px;
+      font-size: 23px;
     }
   
   .horizontal-scroll{
@@ -1101,7 +1101,7 @@ header .navContent ul li{
       overflow: hidden;
     
      margin-top: 100px;
-     margin-left: 500px;
+     margin-left: 120px;
   }
   .horizontal-scroll .btn-scroll{
     background-color: #FAF8F4;
@@ -1580,9 +1580,10 @@ header .navContent ul li{
     
       margin-top: 50px;
     }
-    .scrollbar1 h1{
+    .scrollbar1 h2{
     
-      font-size: 100px;
+      font-size: 30px;
+      margin-left: 35px;
     
     }
     .scrollbar1 .books img {
@@ -1891,7 +1892,7 @@ header .navContent{
       }
         .scrollbar .container h1{
           margin-top: -6px;
-          margin-left: -180px;
+          margin-left: -240px;
           left: 7px;
           font-size: 20px;
         }
@@ -1910,7 +1911,7 @@ header .navContent{
           overflow: hidden;
         
          margin-top: 100px;
-         margin-left: 00px;
+         margin-left: 50px;
       }
       .horizontal-scroll .btn-scroll{
         background-color: #FAF8F4;
@@ -2635,11 +2636,11 @@ header .navContent .label1{
   float: left;
  
   margin-right: 600px;
-   font-size: 25px;
+   font-size: 45px;
    color: #000000;
    font-style: bold;
    font-weight: bold;
-   margin-top: 5px;
+   margin-top: -85px;
 
 }
 
@@ -2649,7 +2650,7 @@ header .navContent .label1 h1{
   float: right;
   margin-top: -10px;
   margin-right: 10px;
-  font-size: 35px;
+  font-size: 55px;
   color: red;
   margin-left: 10px;
   font-weight: bold;
@@ -2669,12 +2670,14 @@ header .navContent{
         margin: 10px;
         color: #000000;
         margin-left: 20px;
+       
+        
         
     }
     .navContent input[type=search]{
         margin: px;
         padding: 20px;
-        width:150px;
+        width:350px;
         margin-left: -280px;
 
     }
@@ -2682,7 +2685,7 @@ header .navContent{
         border-radius: 25px;
         margin: 10px;
         height: 30px;
-        width: 180px;
+        width: 280px;
         margin-left: -20px;
     }
 
@@ -2708,7 +2711,7 @@ header .navContent{
   }
     .scrollbar .container h1{
       margin-top: 80px;
-      margin-left: -710px;
+      margin-left: -750px;
       left: 7px;
       font-size: 26px;
      
@@ -3208,9 +3211,11 @@ header .navContent{
 
   margin-top: 50px;
 }
-.scrollbar1 h1{
+.scrollbar1 h2{
 
-  font-size: 100px;
+  font-size: 25px;
+  margin-left: -130px;
+  
   
 }
 .scrollbar1 .books img {
@@ -3246,7 +3251,7 @@ header .navContent{
 }
 .scrollbar2{
    
-  margin-top: 3300px;
+  margin-top: 3670px;
   width: 40%;
   height: 400px;
   background-color: #ECECEC;
@@ -3693,8 +3698,8 @@ header{
    
     background-color: #FAF8F4;
     
-    
-    margin-left: 280px;
+    margin-top: 100px;
+    margin-left: 290px;
 }
 header .navContent .label1{
   
@@ -3707,6 +3712,7 @@ header .navContent .label1{
    font-style: bold;
    font-weight: bold;
    margin-left: -30px;
+   margin-top: 40px;
 
 }
 
@@ -3729,20 +3735,24 @@ header .navContent {
      
 
         margin-right: 60px;
-        margin-top: 60px;
+        margin-top: -10px;
     }
     .navContent ul li a{
-      display:inline-flex;
+   
       float: left;
         text-decoration: none;
-        margin: 20px;
+        margin: 30px;
         color: #000000;
-        
+       margin-top: -45px;
+       font-size: 20px;
     }
+    
     .navContent ul li a input[type=search]{
         margin: -10px;
-        padding: 20px;
-        width:260px;
+        
+        width:200px;
+        margin-left: 650px;
+       
         
     }
     .navContent ul li a input{
@@ -3759,7 +3769,7 @@ header .navContent {
     }
 
     .scrollbar{
-      margin-top: 00px;
+      margin-top: -50px;
   width: 65%;
   height: 400px;
   background-color: #FAF8F4;
@@ -3779,15 +3789,15 @@ header .navContent {
    
   }
     .scrollbar .container h1{
-      margin-top: 10px;
+      margin-top: 0px;
       margin-left: -990px;
       left: 7px;
       font-size: 26px;
     }
   
   .horizontal-scroll{
-      width: 1400px;
-      height: 400px;
+      width: 1350px;
+      height: 350px;
       background-color: #FAF8F4;
       border: none;
       border-radius: 5px;
@@ -3797,7 +3807,7 @@ header .navContent {
       align-items: center;
       position: relative;
       overflow: hidden;
-      margin-left: 139px;
+      margin-left:120px;
   }
   .horizontal-scroll .btn-scroll{
     background-color: #FAF8F4;
@@ -4263,7 +4273,7 @@ header .navContent {
 
 .scrollbar1{
    
-  margin-top: 100px;
+  margin-top: 140px;
   width: 60%;
   height: 250px;
   background-color: #FAF8F4;
@@ -4281,8 +4291,12 @@ header .navContent {
 }
  .scrollbar1 .scroll1head h2{
 
-  
- display: flex;
+position: fixed;
+
+  margin-left: -10px;
+  display: flex;
+  font-size: 20px;
+
 }
 .scrollbar1 .books img {
  
@@ -4292,6 +4306,7 @@ header .navContent {
   margin-left: 20px;
   border-radius: 20%;
   margin: 40px;
+  margin-top: 0px;
 
 }
 .scrollbar1 .books h3 {
