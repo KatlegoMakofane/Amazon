@@ -76,6 +76,21 @@
     </div>
     </form>
   </div>
+  <script>
+
+    const img = document.getElementById('file');
+    img.addEventListener("change", function(){
+
+    var readimgfile= new FileReader();
+
+        readimgfile.onload= function(){
+            sessionStorage.setItem('file', readimgfile.result);
+            //alert(readimgfile.result);
+        }
+    
+    readimgfile.readAsDataURL(this.files[0]);
+});
+  </script>
   <script src="script.js"> </script>
 </body>
 </html>

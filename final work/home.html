@@ -12,7 +12,7 @@
 
     <title>Document</title>
 </head>
-<body>
+<body onload="changeTheImage()">
 
 
  
@@ -27,9 +27,9 @@
                   <!--image profile-->
                   <div class="profile">
                        <!--inserting image-->
-                       <img src="assets/image/profile.png" alt="">
-                       <p> Welcome <br>Back<br></p>
-                       <h2> <bold>Sarah</bold></h2>
+                       <img id="userimage" src="assets/image/profile.png" alt="">
+                       <p style="  margin-left:80px; text-align: left;" > Welcome <br>Back<br></p>
+                       <h2> <bold id="person-name">Sarah</bold></h2>
                   </div>
                   <br>
                   <br>
@@ -79,12 +79,12 @@
                 <div class="navContent">
                     
                     
-                    <nav>
-                        <label class="label1">Kindle <h1>.</h1> </label>
+                    <nav  >
+                        <label class="label1" >Kindle <h1>.</h1> </label>
              
                         
                         
-                        <ul> <li> <a href="#">
+                        <ul style="margin-top:-50px"> <li> <a href="#">
                             <input type="search" placeholder="Search your books">
                             <i class="fas fa-search"></i>
                          </a></li>
@@ -345,14 +345,14 @@
                  sCont.style.left = currentScrollPosition + "px";
                  if(currentScrollPosition >= 0){
                       currentScrollPosition = 0
-                      btnScrollLeft.style.opacity = "0";
+                      btnScrollLeft.style.opacity = "1";
                  }
                  else{
                    btnScrollLeft.style.opacity = "1";
                  }
                  if(currentScrollPosition <= maxScroll){
                      currentScrollPosition = maxScroll;
-                     btnScrollRight.style.opacity = "0";
+                     btnScrollRight.style.opacity = "1";
 
                  }
                  else{
@@ -376,5 +376,6 @@
           }
           Init();   
         </script> -->
+        <script src="script.js"></script>
 </body>
 </html>

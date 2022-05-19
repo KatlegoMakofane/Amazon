@@ -11,21 +11,21 @@ function signup(){
         sessionStorage.setItem('lastName',surname.value);
         sessionStorage.setItem('userEmail',mail.value);
         sessionStorage.setItem('contactNumber',phoneNumber.value);
-        sessionStorage.setItem('file', images.value);
+        
         sessionStorage.setItem('password', password.value);
         sessionStorage.setItem('confirmPassword', confirmpassword.value);
     
-      if(name.value.length== "" &&name.value.length<=6){
+      if(name.value.length== 0 &&name.value.length<=6){
             alert('Please fill in your Name');
             return true;
            
         }
         if(surname.value==""){
-            alert('Please fill in Last Name');
+            alert('Please fill in Last Last');
             return false;
         }
          if(mail.value==""){
-            alert('Please fill in Last Name');
+            alert('Please fill in yor email');
             return false;
         }if( phoneNumber.value==""){
             alert('Please fill in Contact number');
@@ -47,25 +47,38 @@ function signup(){
     }
     
     function signin(){
-        var logmail=sessionStorage.getItem('mail');
+        var logmail=sessionStorage.getItem('userEmail');
         var pw=sessionStorage.getItem('password');
-        var maibox=document.getElementById('userEmail').value;
+        var mailbox=document.getElementById('userEmail').value;
         var passbox=document.getElementById('userPassword').value;
-        var location = '';
-        if(maibox == logmail &&passbox==pw ){
+        var location='';
+
+        
+        if(mailbox == logmail && passbox ==pw ){
+
             alert("Your Email & Password correct") ;
-    this.location.href("home.html");
+            alert("Welcome " +sessionStorage.getItem('userName'));
+            window.open("home.html");
+           
+            
+            
         }
-        else if(maibox !=passbox &&passbox != pw ){
+        else if(mailbox !=logmail &&passbox != pw ){
           alert("Wrong Email or Password");
         }
-        else if(maibox==''&passbox==''){
+        else if(mailbox==''&&passbox==''){
             alert("Your Email & Password empty");
         }
-        else{
-            alert("Welcome " +sessionStorage.getItem('userName'));
-    window.open("home.html");}
+      
+    
 };
+
+function changeTheImage(){
+    const img=document.getElementById("userimage");
+    img.src=sessionStorage.getItem("file");
+    document.getElementById("person-name").innerText = sessionStorage.getItem("userName");
+}
+
 
     // const validateRegisterForm = () => {
 //     let nameData = document.forms['loginForm']['userName'].value;
