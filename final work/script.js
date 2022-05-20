@@ -62,13 +62,13 @@ function signup(){
            
             
             
+        } else if(mailbox==''&&passbox==''){
+            alert("Your Email & Password empty");
         }
         else if(mailbox !=logmail &&passbox != pw ){
           alert("Wrong Email or Password");
         }
-        else if(mailbox==''&&passbox==''){
-            alert("Your Email & Password empty");
-        }
+       
       
     
 };

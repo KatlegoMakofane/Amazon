@@ -115,7 +115,7 @@ display: inline-block;
 .wrapper .sidebar .product h2{
 
 font-size: 15px;
-margin-top: 128px;
+margin-top: 108px;
 margin-left: 65px;
 align-items: center;
 display: flex;
@@ -3738,7 +3738,7 @@ header .navContent {
      
 
         margin-right: 60px;
-        margin-top: -10px;
+        margin-top: 80px;
     }
     .navContent ul li a{
    
@@ -3774,7 +3774,7 @@ header .navContent {
     }
 
     .scrollbar{
-      margin-top: -50px;
+      margin-top: -100px;
   width: 65%;
   height: 400px;
   background-color: #FAF8F4;
@@ -3796,15 +3796,15 @@ header .navContent {
     
   }
     .scrollbar .container h1{
-      margin-top: 0px;
-      margin-left: -730px;
+      margin-top: 30px;
+      margin-left: -795px;
       left: 7px;
-      font-size: 28px;
+      font-size: 23px;
     }
   
   .horizontal-scroll{
-      width: 1200px;
-      height: 500px;
+      width: 1230px;
+      height: 400px;
       background-color:#FAF8F4 ;
       border: none;
       border-radius: 5px;
@@ -3814,8 +3814,8 @@ header .navContent {
       align-items: center;
       position: relative;
       overflow: hidden;
-      margin-left:200px;
-      
+      margin-left:240px;
+      margin-top: 10px;
       
   }
   .horizontal-scroll .btn-scroll{
@@ -3875,9 +3875,11 @@ header .navContent {
   .wordsb1 h4{
     margin-top: 20px;
     margin-left: 50px;
+    color: white;
   }
   .wordsb1 p{
     margin-left: 50px;
+    color: white;
   }
   .bookimg1{
       position: absolute;
@@ -3892,7 +3894,7 @@ header .navContent {
       height:150px;
       width: 350px;
       border-radius: 10%;
-      left: 25rem;
+      left: 26rem;
       
   }
   .story-circle1{
@@ -3903,7 +3905,7 @@ header .navContent {
     justify-content: center;
     align-items: center;
     border-radius: 20px;
-    margin-right: 20rem;
+    margin-right: 18rem;
   }
   .story-circle1 img{
     width: 100px;
@@ -3920,9 +3922,11 @@ header .navContent {
   .wordsb2 h4{
     margin-top: 20px;
     margin-left: 50px;
+    color: white;
   }
   .wordsb2 p{
     margin-left: 50px;
+    color: white;
   }
   .bookimg2{
       position: absolute;
@@ -3937,7 +3941,7 @@ header .navContent {
       height:150px;
       width: 350px;
       border-radius: 10%;
-      left: 48rem;
+      left: 50rem;
   }
   .story-circle2{
     width: 50px;
@@ -3964,9 +3968,11 @@ header .navContent {
   .wordsb3 h4{
     margin-top: 20px;
     margin-left: 50px;
+    color: white;
   }
   .wordsb3 p{
     margin-left: 50px;
+    color: white;
   }
   .bookimg3{
       position: absolute;
@@ -3981,7 +3987,7 @@ header .navContent {
       height:150px;
       width: 350px;
       border-radius: 10%;
-      left: 71rem;
+      left: 74rem;
   }
   .story-circle3{
     width: 50px;
@@ -4008,9 +4014,11 @@ header .navContent {
   .wordsb4 h4{
     margin-top: 20px;
     margin-left: 50px;
+    color: white;
   }
   .wordsb4 p{
     margin-left: 50px;
+    color: white;
   }
   .bookimg4{
       position: absolute;
@@ -4025,7 +4033,7 @@ header .navContent {
       height:150px;
       width: 350px;
       border-radius: 10%;
-      left: 94rem;
+      left: 98rem;
   }
   .story-circle4{
     width: 50px;
@@ -4051,9 +4059,11 @@ header .navContent {
   .wordsb5 h4{
     margin-top: 20px;
     margin-left: 50px;
+    color: white;
   }
   .wordsb5 p{
     margin-left: 50px;
+    color: white;
   }
   .bookimg5{
       position: absolute;
@@ -4068,7 +4078,7 @@ header .navContent {
       height:150px;
       width: 350px;
       border-radius: 10%;
-      left: 117rem;
+      left: 122rem;
   }
   .story-circle5{
     width: 50px;
@@ -4095,9 +4105,11 @@ header .navContent {
   .wordsb6 h4{
     margin-top: 20px;
     margin-left: 50px;
+    color: white;
   }
   .wordsb6 p{
     margin-left: 50px;
+    color: white;
   }
   .bookimg6{
       position: absolute;
@@ -4111,7 +4123,7 @@ header .navContent {
       height:150px;
       width: 350px;
       border-radius: 10%;
-      left: 140rem;
+      left: 146rem;
   }
   .story-circle6{
       width: 60px;
@@ -4137,9 +4149,11 @@ header .navContent {
   .wordsb7 h4{
     margin-top: 20px;
     margin-left: 50px;
+    color: white;
   }
   .wordsb7 p{
     margin-left: 50px;
+    color: white;
   }
   .bookimg7{
       position: absolute;
@@ -4154,7 +4168,7 @@ header .navContent {
       height:150px;
       width: 350px;
       border-radius: 10%;
-      left: 163rem;
+      left: 170rem;
   }
   .story-circle7{
     width: 50px;
@@ -4181,9 +4195,11 @@ header .navContent {
   .wordsb8 h4{
     margin-top: 20px;
     margin-left: 50px;
+    color: white;
   }
   .wordsb8 p{
     margin-left: 50px;
+    color: white;
   }
   .bookimg8{
       position: absolute;
@@ -4197,7 +4213,7 @@ header .navContent {
       height:150px;
       width: 350px;
       border-radius: 10%;
-      left: 186rem;
+      left: 194rem;
   }
   .story-circle8{
     width: 50px;
@@ -4224,9 +4240,11 @@ header .navContent {
   .wordsb9 h4{
     margin-top: 20px;
     margin-left: 50px;
+    color: white;
   }
   .wordsb9 p{
     margin-left: 50px;
+    color: white;
   }
   .bookimg9{
       position: absolute;
@@ -4241,7 +4259,7 @@ header .navContent {
       height:150px;
       width: 350px;
       border-radius: 10%;
-      left: 209rem;
+      left: 218rem;
   }
   .story-circle9{
     width: 50px;
@@ -4268,9 +4286,12 @@ header .navContent {
   .wordsb10 h4{
     margin-top: 20px;
     margin-left: 50px;
+    color: white;
+   
   }
   .wordsb10 p{
     margin-left: 50px;
+    color: white;
   }
   .bookimg10{
       position: absolute;
@@ -4283,7 +4304,7 @@ header .navContent {
 
 .scrollbar1{
    
-  margin-top: 140px;
+  margin-top: 200px;
   width: 60%;
   height: 290px;
   background-color: #FAF8F4;
@@ -4375,16 +4396,16 @@ position: fixed;
   margin-top: 30px;
   
 }
-.scrollbar2 h2{
+.scrollbar2 .actors h2{
   margin-top: -60px;
   text-align: right;
   font-size: 18px;
-  margin-right: 50px;
+  margin-right: 45px;
 }
-.scrollbar2 p{
+.scrollbar2 .actors p{
    
   text-align: right;
-  margin-right: 80px;
+  margin-right: 75px;
   
   font-size: 18px;
 }
