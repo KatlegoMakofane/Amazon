@@ -8,8 +8,12 @@
      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
     <!--style stylesheet link-->
     <link rel="stylesheet" href="style.css">
-    <script src="https://kit.fontawesome.com/90b2a1b900.js" crossorigin="anonymous"></script>
-
+    
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  </head>
+ 
+    
     <title>Document</title>
 </head>
 <body onload="changeTheImage()">
@@ -86,11 +90,13 @@
                         
                         <ul style="margin-top:-50px"> <li> <a href="#">
                             <input type="search" placeholder="Search your books">
-                            <i class="fas fa-search"></i>
+                          
                          </a></li>
+                            <i class="fas fa-search"></i>
                             <li><a href="#">New release</a></li>
                             <li><a href="#">Featured</a></li>
                             <li> <a href="#"><img src="assets/image/dots.png" alt=""> </a></li>
+                            <li><i class="fa fa-shopping-cart" aria-hidden="true"></i></li>
 
                            
                              
@@ -254,25 +260,35 @@
                 <h2>New Release</h2>
                </div>  
                  <!--1 book container-->
-                <div class="books">
+                <div class="books" onclick="myPopUpOne()">
 
-                    <img src="assets/image/book1.jpg" alt="">
+                  <img src="assets/image/book1.jpg" >
                     
                     <h3>22 Seconds</h3>
                     <p>James patterson</p>
                     <button>Slice life</button>
+                  
+                   
+                    
+                      
                 </div>
+              
                 <!--2 book container-->
-                <div class="books">
+                <div class="books"  onclick="myPopUpOne1()">
 
-                    <img src="assets/image/book3.jpg" alt="">
+                 <img src="assets/image/book3.jpg" alt="" >
+                   
                     
                     <h3>Book Lover</h3>
                     <p>Emily Henry</p>
                     <button>Mystery</button>
+                   
+                      
+                      
+                      
                 </div>
                  <!--3 book container-->
-                 <div class="books">
+                 <div class="books" onclick="myPopUpOne2()">
 
                     <img src="assets/image/book2.jpg" alt="">
                     
@@ -283,7 +299,7 @@
                  <!--4 book container-->
                  <div class="books">
 
-                    <img src="assets/image/book4.jpg" alt="">
+                    <img src="assets/image/book4.jpg" alt="" onclick="myPopUpOne3()">
                     
                     <h3>The Palace Papers</h3>
                     <p>Tina brown</p>
@@ -292,14 +308,119 @@
                 <!--2 book container-->
                 <div class="books">
 
-                    <img src="assets/image/book5.jpg" alt="">
+                    <img src="assets/image/book5.jpg" alt="" onclick="myPopUpOne4()">
                     
                     <h3>A Memoir</h3>
                     <p>Just Tyrus</p>
                     <button>Mystery</button>
                 </div>
-             
-             </div>
+                <div class="preview" id="myPopup" data-target="p-1">
+                    <p onclick="closeForm()">close</p>
+                    <img src="assets/image/book1.jpg">
+                    <h3>The Insider</h3>
+                    <p>
+                        The thrilling novel of espionage and murder set in the dark heart of Westminster, from the UK's most exciting new spy writer
+            A Russian defector is found brutally murdered in a London hotel.
+            Only four people knew he had turned - the four most important and powerful figures in Whitehall.
+            There's only one conclusion:
+            A mole has infiltrated the highest levels of the nation's security.
+            Operating in secret from within Westminster's darkest corners, former spy, Solomon Vine, must uncover the traitor.
+            Because Britain's future hangs in the balance.
+            And with it, the fate of the whole world . . .
+            Praise for Matthew Richardson
+                    </p>
+                    <div class="price">$6.10</div>
+                    <div class="btn">
+                        <a href="#">Add to cart</a>
+                    </div>
+                </div>
+           
+                <!--The Second popup  -->
+                <div class="preview" id="myPopup1" data-target="p-1">
+                    <p onclick="closeForm1()">close</p>
+                    <img src="assets/image/book3.jpg">
+                    <h3>The Insider</h3>
+                    <p>
+                        The thrilling novel of espionage and murder set in the dark heart of Westminster, from the UK's most exciting new spy writer
+            A Russian defector is found brutally murdered in a London hotel.
+            Only four people knew he had turned - the four most important and powerful figures in Whitehall.
+            There's only one conclusion:
+            A mole has infiltrated the highest levels of the nation's security.
+            Operating in secret from within Westminster's darkest corners, former spy, Solomon Vine, must uncover the traitor.
+            Because Britain's future hangs in the balance.
+            And with it, the fate of the whole world . . .
+            Praise for Matthew Richardson
+                    </p>
+                    <div class="price">$6.10</div>
+                    <div class="btn">
+                        <a href="#">Add to cart</a>
+                    </div>
+                </div>
+             <!--The  Third popup  -->
+             <div class="preview" id="myPopup2" data-target="p-1">
+                <p onclick="closeForm2()">close</p>
+                <img src="assets/image/book2.jpg">
+                <h3>The Insider</h3>
+                <p>
+                    The thrilling novel of espionage and murder set in the dark heart of Westminster, from the UK's most exciting new spy writer
+        A Russian defector is found brutally murdered in a London hotel.
+        Only four people knew he had turned - the four most important and powerful figures in Whitehall.
+        There's only one conclusion:
+        A mole has infiltrated the highest levels of the nation's security.
+        Operating in secret from within Westminster's darkest corners, former spy, Solomon Vine, must uncover the traitor.
+        Because Britain's future hangs in the balance.
+        And with it, the fate of the whole world . . .
+        Praise for Matthew Richardson
+                </p>
+                <div class="price">$6.10</div>
+                <div class="btn">
+                    <a href="#">Add to cart</a>
+                </div>
+            </div>
+              <!--The  Fourth popup  -->
+              <div class="preview" id="myPopup3" data-target="p-1">
+                <p onclick="closeForm3()">close</p>
+                <img src="assets/image/book4.jpg">
+                <h3>The Insider</h3>
+                <p>
+                    The thrilling novel of espionage and murder set in the dark heart of Westminster, from the UK's most exciting new spy writer
+        A Russian defector is found brutally murdered in a London hotel.
+        Only four people knew he had turned - the four most important and powerful figures in Whitehall.
+        There's only one conclusion:
+        A mole has infiltrated the highest levels of the nation's security.
+        Operating in secret from within Westminster's darkest corners, former spy, Solomon Vine, must uncover the traitor.
+        Because Britain's future hangs in the balance.
+        And with it, the fate of the whole world . . .
+        Praise for Matthew Richardson
+                </p>
+                <div class="price">$6.10</div>
+                <div class="btn">
+                    <a href="#">Add to cart</a>
+                </div>
+            </div>
+             <!--The  Fivth popup  -->
+             <div class="preview" id="myPopup4" data-target="p-1">
+                <p onclick="closeForm4()">close</p>
+                <img src="assets/image/book5.jpg">
+                <h3>The Insider</h3>
+                <p>
+                    The thrilling novel of espionage and murder set in the dark heart of Westminster, from the UK's most exciting new spy writer
+        A Russian defector is found brutally murdered in a London hotel.
+        Only four people knew he had turned - the four most important and powerful figures in Whitehall.
+        There's only one conclusion:
+        A mole has infiltrated the highest levels of the nation's security.
+        Operating in secret from within Westminster's darkest corners, former spy, Solomon Vine, must uncover the traitor.
+        Because Britain's future hangs in the balance.
+        And with it, the fate of the whole world . . .
+        Praise for Matthew Richardson
+                </p>
+                <div class="price">$6.10</div>
+                <div class="btn">
+                    <a href="#">Add to cart</a>
+                </div>
+            </div>
+           </div>
+
              <!--This class is for the right scroll bar wit the authers-->
              <div class="scrollbar2">
 
@@ -327,7 +448,9 @@
              </div>
               
             </div>
-           
+         
+              
+        
         </main>
         <script>
              
@@ -362,8 +485,37 @@
              }
 
              
-        
-                
+             function myPopUpOne() {
+    document.getElementById("myPopup").style.display = "block";
+  }
+  function closeForm() {
+    document.getElementById("myPopup").style.display = "none";
+  }
+  function myPopUpOne1() {
+    document.getElementById("myPopup1").style.display = "block";
+  }
+  function closeForm1() {
+    document.getElementById("myPopup1").style.display = "none";
+  }     
+  function myPopUpOne2() {
+    document.getElementById("myPopup2").style.display = "block";
+  }
+  function closeForm2() {
+    document.getElementById("myPopup2").style.display = "none";
+  }     
+  function myPopUpOne3() {
+    document.getElementById("myPopup3").style.display = "block";
+  }
+  function closeForm3() {
+    document.getElementById("myPopup3").style.display = "none";
+  }    
+  function myPopUpOne4() {
+    document.getElementById("myPopup4").style.display = "block";
+  }
+  function closeForm4() {
+    document.getElementById("myPopup4").style.display = "none";
+  }    
+  
        </script>
       
         <!-- <script>   

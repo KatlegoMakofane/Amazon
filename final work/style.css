@@ -1,6 +1,3 @@
-body{
-
-}
 
 @media only screen and (min-width : 320px) {
 
@@ -32,7 +29,7 @@ body{
 .wrapper .sidebar .imagecontainer{
 
 background-color: #DFD7C7;
-
+background-image: linear-gradient(to bottom right, #E8E6E5, #d3cab7);
 width: 250px;
 height:300px;
 position:fixed;
@@ -126,9 +123,9 @@ position: absolute;
 .wrapper .sidebar .product img{
 
 
-margin-top: 100px;
-margin-left: 18px;
-width: 180px;
+  margin-top: 80px;
+  margin-left: 18px;
+  width: 180px;
 }
 
 
@@ -157,7 +154,7 @@ header{
     
     float: left;
  
-    margin-top: -230px;;
+    margin-top:160px;;
 }
    
 header .navContent .label1{
@@ -236,9 +233,9 @@ header .navContent ul li{
   width: 65%;
   height: 400px;
   background-color: #FAF8F4;
-
-  margin-left: -330px;
- margin-top: 400px;
+   display: inline-flex;
+  margin-left: -280px;
+ margin-top: -80px;
     }
     .scrollbar.container{
       display:flex;
@@ -254,7 +251,7 @@ header .navContent ul li{
   }
     .scrollbar .container h1{
       margin-top: -80px;
-      margin-left: 950px;
+      margin-left: 850px;
       left: 7px;
       font-size: 15px;
     }
@@ -271,7 +268,7 @@ header .navContent ul li{
       align-items: center;
       position: relative;
       overflow: hidden;
-      margin-left: 1050px;
+      margin-left: 950px;
       
      
   }
@@ -865,7 +862,7 @@ header .navContent ul li{
 .wrapper .sidebar .imagecontainer{
 
 background-color: #DFD7C7;
-
+background-image: linear-gradient(to bottom right, #E8E6E5, #d3cab7);
 width: 250px;
 height:300px;
 position:fixed;
@@ -959,9 +956,9 @@ position: absolute;
 .wrapper .sidebar .product img{
 
 
-margin-top: 100px;
-margin-left: 18px;
-width: 180px;
+  margin-top: 80px;
+  margin-left: 18px;
+  width: 180px;
 }
 
 
@@ -1692,7 +1689,7 @@ header .navContent ul li{
 .wrapper .sidebar .imagecontainer{
 
 background-color: #DFD7C7;
-
+background-image: linear-gradient(to bottom right, #E8E6E5, #d3cab7);
 width: 250px;
 height:300px;
 position:fixed;
@@ -2508,7 +2505,7 @@ header .navContent{
 .wrapper .sidebar .imagecontainer{
 
 background-color: #DFD7C7;
-
+background-image: linear-gradient(to bottom right, #E8E6E5, #d3cab7);
 width: 250px;
 height:300px;
 position:fixed;
@@ -3580,7 +3577,7 @@ font-weight: bold;
  .wrapper .sidebar .imagecontainer{
 
     background-color: #DFD7C7;
-
+    background-image: linear-gradient(to bottom right, #E8E6E5, #d3cab7);
     width: 250px;
     height:300px;
     position:fixed;
@@ -3620,7 +3617,7 @@ font-weight: bold;
   }
 .wrapper .sidebar  .profile  p{
       
-       margin-top: 30px;
+       margin-top: 40px;
       font-size: 16px;
       margin-left: 80px;
       
@@ -3640,7 +3637,7 @@ font-weight: bold;
     
     
     display:block;
-    width: 26spx;
+    width: 26px;
     height:32px;
     border-radius: 20%;
    
@@ -3661,10 +3658,11 @@ font-weight: bold;
     display: inline-block;
     
 }
+
  .wrapper .sidebar .product h2{
 
     font-size: 15px;
-    margin-top: 108px;
+    margin-top: 98px;
     margin-left: 65px;
     align-items: center;
     display: flex;
@@ -3675,7 +3673,7 @@ font-weight: bold;
  .wrapper .sidebar .product img{
 
    
-    margin-top: 80px;
+    margin-top: 65px;
     margin-left: 18px;
     width: 180px;
  }
@@ -3696,12 +3694,12 @@ font-weight: bold;
 
 header{
   width:95%;
-    height: 120px;
+    height: 160px;
     
    
     background-color: #FAF8F4;
     
-    margin-top: 100px;
+    margin-top: -20px;
     margin-left: 290px;
 }
 header .navContent .label1{
@@ -3750,11 +3748,20 @@ header .navContent {
        font-size: 20px;
        margin-top: -52px;
     }
-    
+    .navContent ul li i{
+      float: left;
+      margin-left: 300px;
+      margin-top: -53px;
+    }
+     .navContent ul  i {
+      margin-top: 83px;
+      margin-left: 80px;
+      width: 20px;
+     }
     .navContent ul li a input[type=search]{
         margin: -10px;
         
-        width:200px;
+        width:250px;
         height: -40px;
         margin-left: 550px;
        
@@ -3774,9 +3781,13 @@ header .navContent {
     }
 
     .scrollbar{
-      margin-top: -100px;
+     
+     
+      margin-top: 150px;
   width: 65%;
-  height: 400px;
+  height: 200px;
+
+    
   background-color: #FAF8F4;
 
   margin-left: 290px;
@@ -3787,24 +3798,25 @@ header .navContent {
       justify-content: center;
       align-items: center;
       background-color: blue;
-      height: 550px;
+      height: 200px;
       margin-left: 250px;
       position: fixed;
-      margin-top:150px ;
+      margin-top:-100px ;
      width: 80%;
   
     
   }
     .scrollbar .container h1{
-      margin-top: 30px;
-      margin-left: -795px;
+      margin-top: -400px;
+      margin-left: -790px;
       left: 7px;
       font-size: 23px;
+      
     }
   
   .horizontal-scroll{
       width: 1230px;
-      height: 400px;
+      height: 200px;
       background-color:#FAF8F4 ;
       border: none;
       border-radius: 5px;
@@ -3815,7 +3827,7 @@ header .navContent {
       position: relative;
       overflow: hidden;
       margin-left:240px;
-      margin-top: 10px;
+      margin-top: 20px;
       
   }
   .horizontal-scroll .btn-scroll{
@@ -4304,7 +4316,7 @@ header .navContent {
 
 .scrollbar1{
    
-  margin-top: 200px;
+  margin-top: 100px;
   width: 60%;
   height: 290px;
   background-color: #FAF8F4;
@@ -4320,14 +4332,14 @@ header .navContent {
 }
 .scrollbar1 .books{
 
-  margin-top: 50px;
-  margin-left: -30px;
+  margin-top: -70px;
+  margin-left: -26px;
 }
  .scrollbar1 .scroll1head h2{
 
-position: fixed;
-
-  margin-left: 10px;
+  position: fixed;
+  margin-top: -116px;
+  margin-left: 13px;
   display: flex;
   font-size: 20px;
 
@@ -4364,12 +4376,27 @@ position: fixed;
 
   font-size: 40px;
   margin-left: 1000px;
+  margin-top: 10px;
 }
+.scrollbar1 .preview {
+
+  background-color: lightblue;
+  display: none;
+  position:absolute;
+  justify-content: center;
+  text-align: center;
+  margin-top: -450px;
+  border-radius: 20px;
+  width: 500px;
+  margin-left:300px;
+}
+
+
 .scrollbar2{
    
-  margin-top: -280px;
-  width: 17%;
-  height: 360px;
+  margin-top: -430px;
+  width: 16%;
+  height: 380px;
   background-color: #ECECEC;
   float: right;
   margin-left: 490px;
@@ -4383,8 +4410,8 @@ position: fixed;
 
   font-size: 20px;
   text-align: center;
-  margin-top: 50px;
-  margin-right: 22px;
+  margin-top: 40px;
+  margin-right: 0px;
 
 }
 .scrollbar2 img{
@@ -4400,12 +4427,12 @@ position: fixed;
   margin-top: -60px;
   text-align: right;
   font-size: 18px;
-  margin-right: 45px;
+  margin-right: 25px;
 }
 .scrollbar2 .actors p{
    
   text-align: right;
-  margin-right: 75px;
+  margin-right: 55px;
   
   font-size: 18px;
 }

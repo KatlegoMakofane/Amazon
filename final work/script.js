@@ -1,4 +1,5 @@
 function signup(){
+    //declaring variables
     var name = document.getElementById('userName');
     var surname = document.getElementById('lastName');
     var mail = document.getElementById('userEmail');
@@ -7,44 +8,96 @@ function signup(){
     var images = document.getElementById('file');
     var password =document.getElementById('userPassword');
     var confirmpassword=document.getElementById('confirmPassword');
-        sessionStorage.setItem('userName', name.value);
-        sessionStorage.setItem('lastName',surname.value);
-        sessionStorage.setItem('userEmail',mail.value);
-        sessionStorage.setItem('contactNumber',phoneNumber.value);
-        
-        sessionStorage.setItem('password', password.value);
-        sessionStorage.setItem('confirmPassword', confirmpassword.value);
+    //declaring variables to  Validate against
+    var pass_exp= /^(?=.*?[A-Z])(?=.*?[a-z])(?=.*?[0-9])(?=.*?[#?!@$%^&*-])/;
+    var letters = /^[A-Za-z]+$/;
+    var filter = /^([a-zA-Z0-9_\.\-])+\@(([a-zA-Z0-9\-])+\.)+([a-zA-Z0-9]{2,4})+$/;
+    var numbers =/^[0-9]+$/;
+    //if Statement Test and filter requirement for the variables
+    // if(name== ""){
+    //     alert('Please fill in your Name');
+    //     }
+    //      else if(surname== ''){
+    //         alert('Please fill in your Surname');
+    //     }else if(phoneNumber==''&&password<=10){
+    //         alert('Please fill in your Contact Number');
+    //     }else if (mail == '') {
+    //         alert("Please enter your email")
+    //     }else if(images=''){
+    //         alert('Please pick an image');
+    //     }
+    //     else if ( password == '') {
+    //         alert('Please enter Password');
+    //     } else if (confirmpassword == '') {
+    //         alert('Please enter Confirm Password');
+    //     }  else if (confirmpassword.value=="" ||confirmpassword.value!==password) {
+    //         alert('Password not Matched');
+    //     }else if (document.getElementById("userPassword").value.length < 6) {
+    //         alert('Password minimum length is 6');
+    //     } else if (document.getElementById("userPassword").value.length > 12) {
+    //         alert('Password max length is 12');
+    //     } else {
+    //         sessionStorage.setItem('userName', name.value);
+    //         sessionStorage.setItem('lastName',surname.value);
+    //         sessionStorage.setItem('userEmail',mail.value);
+    //         sessionStorage.setItem('contactNumber',phoneNumber.value);
+            
+    //         sessionStorage.setItem('password', password.value);
+    //         sessionStorage.setItem('confirmPassword', confirmpassword.value);
+
+            
+    //     alert('Your account has been created, Redirecting you to Login Page');
+    //     window.open("index.html");
+    //     }
+
+
     
       if(name.value.length== 0 &&name.value.length<=6){
             alert('Please fill in your Name');
-            return true;
+        
            
-        }
+        }else
         if(surname.value==""){
             alert('Please fill in Last Last');
-            return false;
-        }
+          
+        }else
+        if( phoneNumber.value==""){
+          alert('Please fill in Contact number');
+       
+      }else
          if(mail.value==""){
             alert('Please fill in yor email');
-            return false;
-        }if( phoneNumber.value==""){
-            alert('Please fill in Contact number');
-            return false;
-        } if(images.value==""){
+           
+        }else if(images.value==""){
             alert('Please pick an image');
-            return false;
-        } if(password.value==""){
+           
+        }else if(password.value==""){
             alert('Please fill in your password');
             
-        }if(confirmpassword.value==""){
-            alert('Please enter a matching password');
+        }else 
+        if(confirmpassword.value==""){
+            alert('Please enter aconfirm password');
             
+        }else{
+
+        
+
+            sessionStorage.setItem('userName', name.value);
+            sessionStorage.setItem('lastName',surname.value);
+            sessionStorage.setItem('userEmail',mail.value);
+            sessionStorage.setItem('contactNumber',phoneNumber.value);
+            
+            sessionStorage.setItem('password', password.value);
+            sessionStorage.setItem('confirmPassword', confirmpassword.value);
+
+            alert('Your account has been created, Redirecting you to Login Page');
+            window.open("index.html");
         }
     
      
-        alert('Your account has been created, Redirecting you to Login Page');
-        window.open("index.html");
-    }
+    
+  };
+    
     
     function signin(){
         var logmail=sessionStorage.getItem('userEmail');
@@ -62,10 +115,9 @@ function signup(){
            
             
             
-        } else if(mailbox==''&&passbox==''){
+        }else if(mailbox==''&&passbox==''){
             alert("Your Email & Password empty");
-        }
-        else if(mailbox !=logmail &&passbox != pw ){
+        }else {
           alert("Wrong Email or Password");
         }
        
