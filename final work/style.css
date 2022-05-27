@@ -3590,7 +3590,7 @@ font-weight: bold;
  }
  .wrapper .sidebar .imagecontainer .profile{
 
-         margin-bottom: 50px;
+         margin-bottom: 80px;
          margin-top: 30px;
          text-align: center;
         
@@ -3699,7 +3699,7 @@ header{
    
     background-color: #FAF8F4;
     
-    margin-top: -20px;
+    margin-top: -70px;
     margin-left: 290px;
 }
 header .navContent .label1{
@@ -3742,12 +3742,18 @@ header .navContent {
    
       float: left;
         text-decoration: none;
-        margin: 30px;
+       
         color: #000000;
        
        font-size: 20px;
        margin-top: -52px;
+   
     }
+    .navContent ul li  a i{
+    
+    margin-left: 10px;
+    margin-top: -40px;
+    };
     .navContent ul li i{
       float: left;
       margin-left: 300px;
@@ -3755,7 +3761,7 @@ header .navContent {
     }
      .navContent ul  i {
       margin-top: 83px;
-      margin-left: 80px;
+      margin-left: -10px;
       width: 20px;
      }
     .navContent ul li a input[type=search]{
@@ -3763,7 +3769,7 @@ header .navContent {
         
         width:250px;
         height: -40px;
-        margin-left: 550px;
+        margin-left: 460px;
        
       
     }
@@ -3783,7 +3789,7 @@ header .navContent {
     .scrollbar{
      
      
-      margin-top: 150px;
+      margin-top: 200px;
   width: 65%;
   height: 200px;
 
@@ -3798,10 +3804,10 @@ header .navContent {
       justify-content: center;
       align-items: center;
       background-color: blue;
-      height: 200px;
+      height: 100px;
       margin-left: 250px;
       position: fixed;
-      margin-top:-100px ;
+      margin-top:100px ;
      width: 80%;
   
     
@@ -4316,7 +4322,7 @@ header .navContent {
 
 .scrollbar1{
    
-  margin-top: 100px;
+  margin-top: 130px;
   width: 60%;
   height: 290px;
   background-color: #FAF8F4;
@@ -4380,15 +4386,46 @@ header .navContent {
 }
 .scrollbar1 .preview {
 
-  background-color: lightblue;
+  background-image: linear-gradient(to bottom right, #E8E6E5, #d3cab7);
   display: none;
   position:absolute;
   justify-content: center;
   text-align: center;
-  margin-top: -450px;
+  margin-top: -500px;
   border-radius: 20px;
-  width: 500px;
+  width: 300px;
   margin-left:300px;
+}
+.scrollbar1 .preview img{
+
+  border-radius: 20px;
+  width: 200px;
+  margin-top: 10px;
+}
+.scrollbar1 .preview h3{
+  margin-right: 10px;
+  font-size: 30px;
+  margin-top: 10px;
+  color:white;
+}
+.scrollbar1 .preview .para p{
+
+  background-color:black;
+  border-radius: 20px;
+  width:90%;
+  margin-left: 20px;
+  margin-top: 10px;
+  color: whitesmoke;
+  
+}
+.scrollbar1  .preview .price{
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+.scrollbar1 .preview .price .minusbutton{
+
+  width: 30px;
+  height: 30px;
 }
 
 
@@ -4436,6 +4473,7 @@ header .navContent {
   
   font-size: 18px;
 }
+
 
 }
 .container1{
