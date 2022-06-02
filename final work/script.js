@@ -132,6 +132,100 @@ function changeTheImage(){
 }
 
 
+//The Entire   Arrays and store to other side
+var cartArray = [];
+var itemArray ;
+var productCart = [];
+
+function addtoCart(id){
+
+    var quanitityIncreased = false;
+    //Find if cart already has items.
+    //If yes get items from sessionStorage and save them into array
+    if(sessionStorage.getItem("items") !== null){
+        cartArray = JSON.parse(sessionStorage.getItem("items"));
+
+    }
+    //find the same product
+    for(let i = 0; i < cartArray.length; i++){
+           if(cartArray[i].id === id){
+               cartArray[i].quanitity += 1;
+               quanitityIncreased = true;
+               break;
+           }
+           
+    }
+    
+    if(!quanitityIncreased){
+        //Find product with the same id
+        for(let i = 0; i < products.length; i++){
+            //Add product to cart array
+            if(products[i].id===id){
+                itemArray = 
+                    {
+                        id: products[i].id,
+                        book_title: products[i].book_title,
+                        author:products[i].author,
+                        isbnNumber:products[i].isbnNumber,
+                        imgSrc: products[i].imgSrc,
+                        price:products[i].price,
+                        quanitity: 1 
+                    };
+                
+                cartArray.push(itemArray);
+                Alert="Item added to cart";
+            }
+        }
+        
+    }
+
+    //Save all cart product to sessionStorage
+    sessionStorage.setItem("items", JSON.stringify(cartArray));
+    Alert="Product added to cart";
+   
+    /*for (let i = 0; i < products.length; i++) {
+        if(cartArray == null ){
+            alert('Cart is Empty')
+        } else {
+            products.push(cartArray);
+        }
+        sessionStorage.setItem("item", JSON.stringify(cartArray[0]));
+      
+      
+    };*/
+ 
+}
+function pullinformation(){
+    cartArray = JSON.parse(sessionStorage.getItem("items"));
+    var cartItems = "";
+
+     for(let i = 0; i < cartArray.length; i++){
+        
+        cartItems +=` 
+        <div class="Cart-Items">
+            <div class="image-box">
+                <img src="${cartArray[i].imgSrc}"   style="height:120px"/>
+            </div>
+            <div class="about">
+                <h1 class="title">${cartArray[i].book_title}</h1>
+                <h3 class="subtitle">250ml</h3>
+                <img src="assets/image/book5.jpg" style="height:20px" />
+            </div>
+            <div class="counter">
+                <div class="btn">+</div>
+                <div class="count">${cartArray[i].quanitity}</div>
+                <div class="btn">-</div>
+            </div>
+            <div class="prices">
+                <div class="amount">${cartArray[i].price}</div>
+                <div class="save"><u>Save for later</u></div>
+                <div class="remove"><u>Remove</u></div>
+            </div>
+        </div>`;
+        
+    }
+    document.getElementById("Cart").innerHTML = cartItems;
+}
     // const validateRegisterForm = () => {
 //     let nameData = document.forms['loginForm']['userName'].value;
 //       if(nameData == "") {
@@ -229,3 +323,5 @@ function changeTheImage(){
 
     
 //   };
+
+// SELECT ELEMENTS

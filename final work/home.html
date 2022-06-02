@@ -293,7 +293,7 @@
 
                     <img src="assets/image/book2.jpg" alt="">
                     
-                    <h3>Dream own</h3>
+                    <h3>Dream Town</h3>
                     <p>David Baldacci</p>
                     <button>Thriller</button>
                 </div>
@@ -315,12 +315,17 @@
                     <p>Just Tyrus</p>
                     <button>Mystery</button>
                 </div>
+
+
+               
                 <div class="preview" id="myPopup" data-target="p-1">
-                    <p onclick="closeForm()">close</p>
-                    <img src="assets/image/book1.jpg">
-                    <h3>22 Seconds</h3>
+                    <p onclick="closeForm()"><i class="fa fa-window-close" aria-hidden="true"></i>
+                        close</p>
+                    <img src="assets/image/book1.jpg" id="popimg">
+                    <h3 >22 Seconds</h3>
+                    <h4 >James Patterson</h4>
                     <div class="para">
-                        <p>
+                        <p >
                             22 seconds... until Lindsay Boxer loses her badge—or her life.
     
                             SFPD Sergeant Lindsay Boxer has guns on her mind.
@@ -335,34 +340,41 @@
                         </p>
                         </div>
                         <div class="price">
+                        <h3>ISBN <p >0316499374</p></h3>
+                        <h4>$ <p  id="prices">600</p> </h4>
                        <button class="minusbutton"> -</button> $6.10 <button class="minusbutton"> +</button>
                        </div>
-                        <div class="btn">
-                            <a href="#">Add to cart</a>
+                        <div class="btns" >
+                            <a href="#" onclick="addtoCart(0)" id="urs" >Add to cart</a>
                         </div>
                 </div>
            
-                <!--The Second popup  -->
+               The Second popup
                 <div class="preview" id="myPopup1" data-target="p-1">
-                    <p onclick="closeForm1()">close</p>
+                    <p onclick="closeForm1()"><i class="fa fa-window-close" aria-hidden="true"></i>close</p>
                     <img src="assets/image/book3.jpg">
                     <h3>Book Lovers</h3>
+                    <h4>Emily Henry</h4>
                     <div class="para">
                     <p>
                         One summer. Two rivals. A plot twist they didn't see coming...
 
                         Nora Stephens' life is books—she’s read them all—and she is not that type of heroine. Not the plucky one, not the laidback dream girl, and especially not the sweetheart. In fact, the only people Nora is a heroine for are her clients, for whom she lands enormous deals as a cutthroat literary agent, and her beloved little sister Libby.
-                        If Nora knows she’s not an ideal heroine, Charlie knows he’s nobody’s hero, but as they are thrown together again and again—in a series of coincidences no editor worth their salt would allow—what they discover                    </p></div>
-                    <div class="price"><button class="minusbutton"> -</button> $6.10 <button class="minusbutton"> +</button></div>
-                    <div class="btn">
-                        <a href="#">Add to cart</a>
+                        If Nora knows she’s not an ideal heroine, Charlie knows he’s nobody’s hero, but as they are thrown together again and again                  </p></div>
+                    <div class="price">
+                        <h3>ISBN <p>0593334833</p></h3>
+                        <h4>$ <p>600</p> </h4>
+                        <button class="minusbutton"> -</button> <p id="numbooks">1</p> <button class="minusbutton"> +</button></div>
+                    <div class="btns">
+                        <a href="#" onclick="addtoCart(1)">Add to cart</a>
                     </div>
                 </div>
-             <!--The  Third popup  -->
+            <!--The  Third popup --> 
              <div class="preview" id="myPopup2" data-target="p-1">
-                <p onclick="closeForm2()">close</p>
+                <p onclick="closeForm2()"><i class="fa fa-window-close" aria-hidden="true"></i>close</p>
                 <img src="assets/image/book2.jpg">
                 <h3> Dream Town</h3>
+                <h4>David Baldacci</h4>
                 <div class="para">
                 <p>
                     Private investigator and World War II veteran Aloysius Archer heads to Los Angeles, the city where dreams are made and shattered, and is ensnared in a lethal case in this latest thriller in #1 New York Times bestselling author David Baldacci’s Nero Award-winning series.  
@@ -371,40 +383,50 @@
                      
         Praise for Matthew Richardson 
                 </p></div>
-                <div class="price"><button class="minusbutton"> -</button> $6.10 <button class="minusbutton"> +</button></div>
-                <div class="btn">
-                    <a href="#">Add to cart</a>
+                <div class="price">
+                    <h3>ISBN <p>1538719770</p></h3>
+                        <h4>$ <p>600</p> </h4>
+                    <button class="minusbutton"> -</button> $6.10 <button class="minusbutton"> +</button></div>
+                <div class="btns">
+                    <a href="#"  onclick="addtoCart(2)">Add to cart</a>
                 </div>
             </div>
-              <!--The  Fourth popup  -->
+              <!--The  Fourth popup-->  
               <div class="preview" id="myPopup3" data-target="p-1">
-                <p onclick="closeForm3()">close</p>
-                <img src="assets/image/book4.jpg">
-                <h3>The Palace Pappers</h3>
-                <div class="para">
-                <p>
+                  <p onclick="closeForm3()"><i class="fa fa-window-close" aria-hidden="true"></i>close</p>
+                   <img src="assets/image/book4.jpg">
+                     <h3>The Palace Pappers</h3>
+                     <h4>Tina Brown</h4>
+                  <div class="para">
+                     <p>
                     “Never again” became Queen Elizabeth II’s mantra shortly after Princess Diana’s tragic death. More specif­ically, there could never be “another Diana”—a mem­ber of the family whose global popularity upstaged, outshone, and posed an existential threat to the Brit­ish monarchy.
                     Picking up where Tina Brown’s masterful The Diana Chronicles left off, The Palace Papers reveals how the royal family reinvented itself after the trau­matic years when Diana’s blazing celebrity ripped through the House of Windsor like a comet.
 
-                </p></div>
-                <div class="price"><button class="minusbutton"> -</button> $6.10 <button class="minusbutton"> +</button></div>
-                <div class="btn">
-                    <a href="#">Add to cart</a>
+                    </p></div>
+                <div class="price">
+                    <h3>ISBN <p>1646499374</p></h3>
+                        <h4>$ <p>600</p> </h4>
+                    <button class="minusbutton"> -</button> $6.10 <button class="minusbutton"> +</button></div>
+                <div class="btns">
+                    <a href="#"  onclick="addtoCart(3)">Add to cart</a>
                 </div>
             </div>
-             <!--The  Fivth popup  -->
+             <!--The  Fivth popup-->  
              <div class="preview" id="myPopup4" data-target="p-1">
-                <p onclick="closeForm4()">close</p>
+                <p onclick="closeForm4()"><i class="fa fa-window-close" aria-hidden="true"></i>close</p>
                 <img src="assets/image/book5.jpg">
                 <h3>A Memoir</h3>
+                <h4>Just Tyrus</h4>
                 <div class="para">
                 <p>
                     Pro wrestler and political commentator Tyrus goes deep into his wild but triumphant life story, from his painfully dysfunctional upbringing to bodyguarding for Snoop Dogg, to becoming a wrestling icon and one of the most provocative on-air voices today. I read it in one day and cheered for him when I got to the end. Tyrus has written a book that is at once raw, tender, intelligent, candid, and hilarious. Tyrus took a very rough start to his life and used perseverance, confident humility, and accountability to land firmly on his feet. What a triumph!
                 </p></div>
                 <div class="price">
+                    <h3>ISBN <p>1786499473</p></h3>
+                        <h4>$ <p>600</p> </h4>
                     <button class="minusbutton"> -</button> $6.10 <button class="minusbutton"> +</button></div>
-                <div class="btn">
-                    <a href="#">Add to cart</a>
+                <div class="btns">
+                    <a href="#"  onclick="addtoCart(4)">Add to cart</a>
                 </div>
             </div>
            </div>
@@ -476,34 +498,59 @@
              function myPopUpOne() {
     document.getElementById("myPopup").style.display = "block";
   }
-  function closeForm() {
+            function closeForm() {
     document.getElementById("myPopup").style.display = "none";
   }
-  function myPopUpOne1() {
+             function myPopUpOne1() {
     document.getElementById("myPopup1").style.display = "block";
   }
-  function closeForm1() {
+              function closeForm1() {
     document.getElementById("myPopup1").style.display = "none";
   }     
-  function myPopUpOne2() {
+               function myPopUpOne2() {
     document.getElementById("myPopup2").style.display = "block";
   }
-  function closeForm2() {
+              function closeForm2() {
     document.getElementById("myPopup2").style.display = "none";
   }     
-  function myPopUpOne3() {
+               function myPopUpOne3() {
     document.getElementById("myPopup3").style.display = "block";
   }
-  function closeForm3() {
+                 function closeForm3() {
     document.getElementById("myPopup3").style.display = "none";
   }    
-  function myPopUpOne4() {
+                function myPopUpOne4() {
     document.getElementById("myPopup4").style.display = "block";
   }
-  function closeForm4() {
+                 function closeForm4() {
     document.getElementById("myPopup4").style.display = "none";
   }    
   
+
+  
+ 
+
+//     function add()
+//     {
+//        //THis for car information
+//     var image = document.getElementById('popimg');
+//      var ItemTitle = document.getElementById('title');
+//     // var Authors = document.getElementById('author');
+//     // var desc = document.getElementById('description');
+//     // var ISBNnumber=document.getElementById('ISBN');
+//     // var priceas = document.getElementById('prices');
+//     // var numberofbooks=document.getElementById('numbooks');
+//      //
+
+//      ItemTitle="22 Seconds";
+    
+//     //Storage
+//     //sessionStorage.setItem('popimg', name.value);
+//  sessionStorage.setItem('title',ItemTitle );
+//  sessionStorage.setItem('popimg',image);
+
+//     }
+   
        </script>
       
         <!-- <script>   
@@ -520,5 +567,6 @@
           Init();   
         </script> -->
         <script src="script.js"></script>
+        <script src="products.js"></script>
 </body>
 </html>
