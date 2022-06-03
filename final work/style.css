@@ -4545,10 +4545,16 @@ header .navContent {
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
+  margin-top: 10px;
+  margin-bottom: 20px;
 }
 .image-box{
 	width: 15%;
 	text-align: center;
+  
+}
+.image-box img{
+  border-radius: 20%;
 }
 .about{
 	height: 100%;
@@ -4644,47 +4650,37 @@ hr{
 	display: flex;
 	justify-content: space-between;
 }
-.Subtotal{
-	font-size: 22px;
-	font-family: 'Open Sans';
-	font-weight: 700;
-	color: #202020;
-}
+
 .items{
-	font-size: 16px;
+	font-size: 26px;
 	font-family: 'Open Sans';
 	font-weight: 500;
-	color: #909090;
+	color: #f32e0b;
 	line-height: 10px;
+  margin-top: -20px;
+  margin-left: -30px;
 }
 .total-amount{
-	font-size: 36px;
+	font-size: 25px;
 	font-family: 'Open Sans';
 	font-weight: 900;
 	color: #202020;
+  margin-left: 120px;
+  margin-top: 10px;
+  
 }
-.buttons{
-	margin-top: 350px;
-  margin-left: 750px;
-	width: 20%;
+.checkbuttons{
+
+	width: 220px;
 	height: 40px;
 	border: none;
 	background: linear-gradient(to bottom right, #B8D7FF, #8EB7EB);
 	border-radius: 20px;
-	cursor: pointer;
-	font-size: 16px;
-	font-family: 'Open Sans';
-	font-weight: 600;
-	color: #202020;
+  margin-top: 100px;
+  margin-left: -200px;
+
 }
-.Received_information{
-   
-  width: 200px;
-  height: 200px;
-  background-color: #23b4ce;
-  margin-top: 200px;
-  margin-left: 300px;
-}
+
 
 }
 .container1{

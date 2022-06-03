@@ -142,9 +142,9 @@ function addtoCart(id){
     var quanitityIncreased = false;
     //Find if cart already has items.
     //If yes get items from sessionStorage and save them into array
-    if(sessionStorage.getItem("items") !== null){
-        cartArray = JSON.parse(sessionStorage.getItem("items"));
-
+    if(localStorage.getItem("items") !== null){
+        cartArray = JSON.parse(localStorage.getItem("items"));
+       
     }
     //find the same product
     for(let i = 0; i < cartArray.length; i++){
@@ -165,6 +165,7 @@ function addtoCart(id){
                     {
                         id: products[i].id,
                         book_title: products[i].book_title,
+                        description:products[i].description,
                         author:products[i].author,
                         isbnNumber:products[i].isbnNumber,
                         imgSrc: products[i].imgSrc,
@@ -180,7 +181,7 @@ function addtoCart(id){
     }
 
     //Save all cart product to sessionStorage
-    sessionStorage.setItem("items", JSON.stringify(cartArray));
+    localStorage.setItem("items", JSON.stringify(cartArray));
     Alert="Product added to cart";
    
     /*for (let i = 0; i < products.length; i++) {
@@ -195,8 +196,29 @@ function addtoCart(id){
     };*/
  
 }
+
+function remove(id, event){
+   
+    for( var i = 0; i < cartArray.length; i++){ 
+                                   
+        if ( products[i].id===id ) { 
+            cartArray.splice(i, 1); 
+            i--;
+            var btnClicked = event.target;
+
+            //Find main div and remove it
+              
+              btnClicked.cartItems()
+            break;
+        }
+    }
+
+    //Update localStorage
+
+    //
+};
 function pullinformation(){
-    cartArray = JSON.parse(sessionStorage.getItem("items"));
+    cartArray = JSON.parse(localStorage.getItem("items"));
     var cartItems = "";
 
      for(let i = 0; i < cartArray.length; i++){
@@ -217,14 +239,17 @@ function pullinformation(){
                 <div class="btn">-</div>
             </div>
             <div class="prices">
-                <div class="amount">${cartArray[i].price}</div>
+                <div class="amount">R ${cartArray[i].price}</div>
                 <div class="save"><u>Save for later</u></div>
-                <div class="remove"><u>Remove</u></div>
+                <div class="remove" onclick="remove(${cartArray[i].id}, event) ";><u>Remove</u></div>
             </div>
         </div>`;
         
     }
     document.getElementById("Cart").innerHTML = cartItems;
+}
+function outputCheckout(){
+    alert("Your are purching the items seleceted  ");
 }
     // const validateRegisterForm = () => {
 //     let nameData = document.forms['loginForm']['userName'].value;
