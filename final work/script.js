@@ -182,7 +182,9 @@ function addtoCart(id){
 
     //Save all cart product to sessionStorage
     localStorage.setItem("items", JSON.stringify(cartArray));
-    Alert="Product added to cart";
+    alert("Product added to cart");
+
+   
    
     /*for (let i = 0; i < products.length; i++) {
         if(cartArray == null ){
@@ -196,27 +198,47 @@ function addtoCart(id){
     };*/
  
 }
+    function Clearall(){
 
-function remove(id, event){
-   
-    for( var i = 0; i < cartArray.length; i++){ 
-                                   
-        if ( products[i].id===id ) { 
-            cartArray.splice(i, 1); 
-            i--;
-            var btnClicked = event.target;
-
-            //Find main div and remove it
-              
-              btnClicked.cartItems()
-            break;
-        }
+        localStorage.clear();
+        location.reload();
     }
+function remove(id,event){
+    
+    
+ 
+            
+        for(let i = 0; i < cartArray.length; i++){  
+            if ( cartArray[i].id!==id ) { 
+                
+                cartArray.splice(id,id);
+               
+             
+                localStorage.setItem("items", JSON.stringify(cartArray)); 
+            
+            
+               
+            };
+           
+            location.reload();
+        
+           
 
+    } 
+     alert("Item removed from cart");
+       let productNumbers = localStorage.getItem('cartNumbers');
+                productNumbers = parseInt(productNumbers);
+                if(productNumbers){
+                  localStorage.setItem('cartNumbers', productNumbers-1);
+                    
+                }
+
+                 
+};
     //Update localStorage
 
     //
-};
+
 function pullinformation(){
     cartArray = JSON.parse(localStorage.getItem("items"));
     var cartItems = "";
@@ -251,6 +273,36 @@ function pullinformation(){
 function outputCheckout(){
     alert("Your are purching the items seleceted  ");
 }
+function cartNumbers(){
+    let productNumbers = localStorage.getItem('cartNumbers');
+    productNumbers = parseInt(productNumbers);
+    if(productNumbers){
+      localStorage.setItem('cartNumbers', productNumbers+1);
+        document.querySelector('.cartnumber').textContent=productNumbers+1;    
+    }
+    else{
+      localStorage.setItem('cartNumbers', 1);
+    console.log(document.querySelector('.cartnumber'));
+    document.querySelector('.cartnumber').textContent=1;
+   
+    }
+  }
+  function totalCost(product){
+    if( localStorage.getItem('totalCost') === null){
+      localStorage.setItem('totalCost', "0");
+    }
+    
+   let cartCost = localStorage.getItem('totalCost');
+    if(cart != null){
+        
+        
+        cartCost = parseInt(cartCost);
+        localStorage.setItem('totalCost',cartCost+product.price);
+    }
+    else{
+      localStorage.setItem('totalCost',product.price); 
+    }
+  }
     // const validateRegisterForm = () => {
 //     let nameData = document.forms['loginForm']['userName'].value;
 //       if(nameData == "") {
