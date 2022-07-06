@@ -62,34 +62,3 @@ const products = [
         
     })
 }
-
-function cartNumbers(){
-  let productNumbers = localStorage.getItem('cartNumbers');
-  productNumbers = parseInt(productNumbers);
-  if(productNumbers){
-    localStorage.setItem('cartNumbers', productNumbers+1);
-      document.querySelector('.cartnumber').textContent=productNumbers+1;    
-  }
-  else{
-    localStorage.setItem('cartNumbers', 1);
-  console.log(document.querySelector('.cartnumber'));
-  document.querySelector('.cartnumber').textContent=1;
- 
-  }
-}
-function totalCost(product){
-  if( localStorage.getItem('totalCost') === null){
-    localStorage.setItem('totalCost', "0");
-  }
-  
- let cartCost = localStorage.getItem('totalCost');
-  if(cart != null){
-      
-      
-      cartCost = parseInt(cartCost);
-      localStorage.setItem('totalCost',cartCost+product.price);
-  }
-  else{
-    localStorage.setItem('totalCost',product.price); 
-  }
-}
